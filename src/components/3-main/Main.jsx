@@ -38,18 +38,18 @@ const Main = () => {
           onClick={() => {
             handleClick("css");
           }}
-          className={currentActive === "css" ? "active" : null}
+          className={currentActive === "html" ? "active" : null}
         >
           HTML & CSS
         </button>
 
         <button
           onClick={() => {
-            handleClick("js");
+            handleClick("laravel");
           }}
-          className={currentActive === "js" ? "active" : null}
+          className={currentActive === "laravel" ? "active" : null}
         >
-          JavaScript
+          Laravel
         </button>
         <button
           onClick={() => {
@@ -88,18 +88,30 @@ const Main = () => {
                   <p className="sub-title">
                   {item.projectDescription}
                   </p>
-
+                  <p className="sub-category">
+                    {item.category.map((item, index) => {
+                      return (
+                        <span key={index} className="category">
+                          {item}                                                
+                        </span>
+                      );
+                    })}
+                  </p>
                   <div className="flex icons">
-                    <div style={{ gap: "11px" }} className="flex">
-                      <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                    <div style={{ gap: "15px" }} className="flex">
+                    {item.Link && (
+                      <a className="icon-link" href={item.Link} target={`_blank`}/>
+                    )}
+                       {item.github && (
+                      <a className="icon-github" href={item.github} target={`_blank`}/>
+                    )}              
                     </div>
 
                     <a className="link flex" href="">
                       more
                       <span
                         style={{ alignSelf: "end" }}
-                        className="icon-arrow-right"
+                        className="icon-arrow-right2"
                       ></span>
                     </a>
                   </div>

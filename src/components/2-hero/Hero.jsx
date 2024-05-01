@@ -3,6 +3,8 @@ import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   const lottieRef = useRef();
@@ -36,14 +38,15 @@ const Hero = () => {
           added features to enhance functionality. I improved user experience by
           implementing new features and addressing performance issues. My
           contributions as a problem solver and collaborator improved the
-          website's usability.
+          website usability.
         </p>
 
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+        <a className="icon icon-facebook-square" target={`_blank`} href={'https://www.facebook.com/Rmai.Suwayyed/'}/>
+          <a className="icon icon-x" target={`_blank`} href={'https://twitter.com/Rami_Suwayyed/'}/>
+          <a  className="icon icon-instagram" target={`_blank`} href={'https://www.instagram.com/rami_suwayyed/'} />
+          <a className="icon icon-github" target={`_blank`} href={'https://github.com/Rami-Suwayyed/'} />
+          <a className="icon icon-linkedin" target={`_blank`} href={'https://www.linkedin.com/in/rami-suwayyed/'} />
         </div>
       </div>
 
