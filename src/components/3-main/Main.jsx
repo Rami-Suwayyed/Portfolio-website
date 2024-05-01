@@ -36,7 +36,7 @@ const Main = () => {
 
         <button
           onClick={() => {
-            handleClick("css");
+            handleClick("html");
           }}
           className={currentActive === "html" ? "active" : null}
         >
@@ -85,26 +85,46 @@ const Main = () => {
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">
-                  {item.projectDescription}
-                  </p>
+                  <p className="sub-title">{item.projectDescription}</p>
                   <p className="sub-category">
                     {item.category.map((item, index) => {
                       return (
                         <span key={index} className="category">
-                          {item}                                                
+                          {item}
                         </span>
                       );
                     })}
                   </p>
                   <div className="flex icons">
                     <div style={{ gap: "15px" }} className="flex">
-                    {item.Link && (
-                      <a className="icon-link" href={item.Link} target={`_blank`}/>
-                    )}
-                       {item.github && (
-                      <a className="icon-github" href={item.github} target={`_blank`}/>
-                    )}              
+                      {item.Link && (
+                        <a
+                          className="icon-link"
+                          href={item.Link}
+                          target={`_blank`}
+                        />
+                      )}
+                      {item.ios && (
+                        <a
+                          className="icon-appleinc"
+                          href={item.ios}
+                          target={`_blank`}
+                        />
+                      )}
+                      {item.android && (
+                        <a
+                          className="icon-googleplay"
+                          href={item.android}
+                          target={`_blank`}
+                        />
+                      )}
+                      {item.github && (
+                        <a
+                          className="icon-github"
+                          href={item.github}
+                          target={`_blank`}
+                        />
+                      )}
                     </div>
 
                     <a className="link flex" href="">

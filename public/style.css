@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?x5aka0');
-  src:  url('fonts/icomoon.eot?x5aka0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?x5aka0') format('truetype'),
-    url('fonts/icomoon.woff?x5aka0') format('woff'),
-    url('fonts/icomoon.svg?x5aka0#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?aectxb');
+  src:  url('fonts/icomoon.eot?aectxb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?aectxb') format('truetype'),
+    url('fonts/icomoon.woff?aectxb') format('woff'),
+    url('fonts/icomoon.svg?aectxb#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -49,6 +49,10 @@
 .icon-facebook-square:before {
   content: "\e900";
 }
+.icon-googleplay:before {
+  content: "\e909";
+  color: #607d8b;
+}
 .icon-x:before {
   content: "\e908";
 }
@@ -72,6 +76,9 @@
 }
 .icon-github:before {
   content: "\eab0";
+}
+.icon-appleinc:before {
+  content: "\eabe";
 }
 .icon-linkedin:before {
   content: "\eac9";
