@@ -4,8 +4,7 @@ export const myProjects = [
   {
     keyID: 1,
     projectTitle: "Arab Georgia",
-    projectDescription:
-      "Georgia is a community project that helps Arabs living in or moving to Georgia. The project provides a forum for Arab Georgians to connect with each other and share resources, experiences, and advice.The project also provides employment opportunities for Arabs residing in Georgia....",
+    projectDescription: "Georgia is a community project that helps Arabs living in or moving to Georgia. The project provides a forum for Arab Georgians to connect with each other and share resources, experiences, and advice.The project also provides employment opportunities for Arabs residing in Georgia....",
     category: ["laravel", "react"],
     imgPath: "./images/1.png",
     Link: "https://arab-georgia.com/",
@@ -193,6 +192,18 @@ export const myProjects = [
     imgPath: "./images/17.png",
     Link: "https://illustrious-sopapillas-c96ed0.netlify.app/",
     github: "",
+    ios: "",
+    android: "",
+  },
+
+  {
+    keyID: 18,
+    projectTitle: "Bloggi",
+    projectDescription: "Building an integrated content management system from scratch using the Laravel Framework, which is a system similar to WordPress that will have multiple users and permissions for each user, where users can register in the system and be able to write articles, control them, and control comments on their articles.",
+    category: ["laravel", "Api"],
+    imgPath: "./images/18.png",
+    Link: "https://bloggi.online/",
+    github: "https://github.com/Rami-Suwayyed/CMS-Blog",
     ios: "",
     android: "",
   },

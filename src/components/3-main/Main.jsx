@@ -79,7 +79,7 @@ const Main = () => {
                 animate={{ transform: "scale(1)" }}
                 transition={{ type: "spring", damping: 8, stiffness: 50 }}
                 key={item.keyID}
-                className="  card"
+                className=" card"
               >
                 <img width={266} src={item.imgPath} alt="" />
 
