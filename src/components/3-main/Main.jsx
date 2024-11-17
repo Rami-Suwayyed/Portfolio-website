@@ -127,7 +127,9 @@ const Main = () => {
                       )}
                     </div>
 
-                    <a className="link flex" href="">
+                    <a className="link flex" 
+                    href={item.Link}
+                    target={`_blank`}>
                       more
                       <span
                         style={{ alignSelf: "end" }}
