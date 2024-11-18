@@ -30,29 +30,32 @@ const Header = () => {
       <div />
 
       <nav>
-        <ul className="flex">
-          <li>
-            <a href="#about">About</a>
-          </li>
+          <ul className="flex">
+              <li>
+                  <a href="#about">About</a>
+              </li>
 
-          {/* <li>
+              {/* <li>
             <a href="">Articles</a>
           </li> */}
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          {/* <li>
+              <li>
+                  <a href="#projects">Projects</a>
+              </li>
+              {/* <li>
             <a href="">Speaking</a>
           </li> */}
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+              <li>
+                  <a href="#contact">Contact</a>
+              </li>
+              <li>
+                  <a href="#resume">Resume</a>
+              </li>
+          </ul>
       </nav>
 
-      <button
-        onClick={() => {
-          // Send value to LS
+        <button
+            onClick={() => {
+                // Send value to LS
           localStorage.setItem(
             "currentMode",
             theme === "dark" ? "light" : "dark"

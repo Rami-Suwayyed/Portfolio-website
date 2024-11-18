@@ -119,4 +119,20 @@ section.contact-us .submit:hover {
     width: 30%;
     align-self: center;
   }
+
+ .iconsCV {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+   background-color: orange;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .iconsCV.icon:hover {
+    font-size: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+    background-color: orange;
+  }
 }

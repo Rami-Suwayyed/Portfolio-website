@@ -47,6 +47,7 @@ const Hero = () => {
           <a  className="icon icon-instagram" target={`_blank`} href={'https://www.instagram.com/rami_suwayyed/'} />
           <a className="icon icon-github" target={`_blank`} href={'https://github.com/Rami-Suwayyed/'} />
           <a className="icon icon-linkedin" target={`_blank`} href={'https://www.linkedin.com/in/rami-suwayyed/'} />
+          <a className="icon icon-file-pdf" target={`_blank`} href={'https://drive.google.com/file/d/1lzFhOUcI5hJ8X98ZFO5OLY79dNDrRJta/view?usp=sharing'} />
         </div>
       </div>
 
