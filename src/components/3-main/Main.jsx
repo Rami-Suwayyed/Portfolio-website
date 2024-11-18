@@ -126,16 +126,17 @@ const Main = () => {
                         />
                       )}
                     </div>
-
-                    <a className="link flex" 
-                    href={item.Link}
-                    target={`_blank`}>
-                      more
-                      <span
-                        style={{ alignSelf: "end" }}
-                        className="icon-arrow-right2"
-                      ></span>
-                    </a>
+                    {item.Link && (
+                        <a className="link flex"
+                           href={item.Link}
+                           target={`_blank`}>
+                          more
+                          <span
+                              style={{alignSelf: "end"}}
+                              className="icon-arrow-right2"
+                          ></span>
+                        </a>
+                    )}
                   </div>
                 </div>
               </motion.article>
