@@ -80,6 +80,28 @@ section.contact-us .submit:hover {
   scale: 0.97;
 }
 
+.all-icons {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+.all-icons .btCv {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+    padding: 1.3rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.all-icons .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
 /* =====================================
   3- Responsive Design (media query)
 ======================================== */
@@ -120,19 +142,4 @@ section.contact-us .submit:hover {
     align-self: center;
   }
 
- .iconsCV {
-    font-size: 1.3rem;
-    gap: 1.5rem;
-    color: var(--subtitle);
-   background-color: orange;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  .iconsCV.icon:hover {
-    font-size: 1.4rem;
-    transition: 0.3s;
-    cursor: pointer;
-    color: var(--icon-hover);
-    background-color: orange;
-  }
 }
