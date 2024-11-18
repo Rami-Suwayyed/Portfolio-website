@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
-
-export const myProjects = [
-  {
+export const myProjects = [{
     keyID: 1,
     projectTitle: "Arab Georgia",
     projectDescription: "Georgia is a community project that helps Arabs living in or moving to Georgia. The project provides a forum for Arab Georgians to connect with each other and share resources, experiences, and advice.The project also provides employment opportunities for Arabs residing in Georgia....",
@@ -11,137 +8,117 @@ export const myProjects = [
     github: "https://github.com/GlyphsMarketing/ArabGeorgia-Backend/",
     ios: "https://apps.apple.com/jo/app/arab-georgia/id6446327662",
     android: "https://play.google.com/store/apps/details?id=com.glyphsmarketing.arabgeorgia.app&pcampaignid=web_share",
-  },
-  {
+}, {
     keyID: 2,
     projectTitle: "All Arab USA",
-    projectDescription:
-      "Arab USA represents a nationwide initiative focused on uniting Arab communities across all 50 states. Catering to Arab residents anywhere in the U.S., and those considering relocating, this project is committed to fostering connections and reinforcing bonds. Leveraging social media platforms, organizing events......",
+    projectDescription: "Arab USA represents a nationwide initiative focused on uniting Arab communities across all 50 states. Catering to Arab residents anywhere in the U.S., and those considering relocating, this project is committed to fostering connections and reinforcing bonds. Leveraging social media platforms, organizing events......",
     category: ["laravel", "react"],
     imgPath: "./images/2.png",
     Link: "https://allarabusa.com/",
     github: "",
     ios: "https://apps.apple.com/jo/app/arab-usa/id6463208425",
     android: "https://play.google.com/store/apps/details?id=com.glyphsmarketing.arabusa&pcampaignid=web_share",
-  },
-  {
+}, {
     keyID: 3,
-    projectTitle: "Al-ustath Educational",
-    projectDescription: "The Al-Ustath application is one of the outstanding interactive applications in the Saudi market, as it allows students from all levels to choose the desired subject and the appropriate teacher to book and request private lessons online at suitable times, in addition to many features that make the experience unique and successful",
-    category: ["laravel", "Api"],
-    imgPath: "./images/3.png",
-    Link: "https://al-ustath.com/",
-    github: "",
-    ios: "https://apps.apple.com/jo/app/%D8%A7%D9%84%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0/id1625060070",
-    android: "https://play.google.com/store/apps/details?id=com.digisol.teacher.teacher&pli=1",
-  },
-  {
-    keyID: 4,
     projectTitle: "Bloggi",
     projectDescription: "Building an integrated content management system from scratch using the Laravel Framework, which is a system similar to WordPress that will have multiple users and permissions for each user, where users can register in the system and be able to write articles, control them, and control comments on their articles.",
     category: ["laravel", "Api"],
-    imgPath: "./images/4.png",
+    imgPath: "./images/3.png",
     Link: "https://bloggi.online/",
     github: "https://github.com/Rami-Suwayyed/CMS-Blog",
     ios: "",
     android: "",
-  },
-  {
+}, {
+    keyID: 4,
+    projectTitle: "DigitalAssistech Website",
+    projectDescription: "Digital Assistech is a website that provides a range of services to help businesses grow and succeed. The website offers a variety of services, including web design, digital marketing, and SEO. With a team of experts in the field, Digital Assistech is committed to helping businesses achieve their goals and reach their full potential....",
+    category: ["laravel", "livewire", "react", "Api"],
+    imgPath: "./images/4.png",
+    Link: "https://digitalassistech.com/",
+    github: "",
+    ios: "",
+    android: "",
+}, {
     keyID: 5,
     projectTitle: "Georgia Muslim",
-    projectDescription:"Georgia is a community project that helps Arabs living in or moving to Georgia. The project provides a forum for Arab Georgians to connect with each other and share resources, experiences, and advice.The project also provides employment opportunities for Arabs residing in Georgia....",
+    projectDescription: "Georgia is a community project that helps Arabs living in or moving to Georgia. The project provides a forum for Arab Georgians to connect with each other and share resources, experiences, and advice.The project also provides employment opportunities for Arabs residing in Georgia....",
     category: ["laravel", "react"],
     imgPath: "./images/5.png",
     Link: "https://georgiamuslim.com/",
     github: "",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 6,
     projectTitle: "E-commerce BOUTIQUE",
-    projectDescription:
-      "Ecommerce is the buying/selling of goods or services on the Internet",
+    projectDescription: "Ecommerce is the buying/selling of goods or services on the Internet",
     category: ["laravel"],
     imgPath: "./images/6.png",
     Link: "https://ecommerce.carsworkshops.com/",
     github: "https://github.com/Rami-Suwayyed/Boutique",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 7,
     projectTitle: "Cars Workshops Application",
-    projectDescription:
-      "cars workshops application With it, users can maintain their cars through various workshops.Discover, Book, and Maintain Your Car's Best Friend - Cars Workshops App This tagline highlights the key features of your app: helping users discover workshops, book appointments, and ensure their cars are well-maintained. It emphasizes convenience and reliability, which are important factors for users seeking automotive services.",
+    projectDescription: "cars workshops application With it, users can maintain their cars through various workshops.Discover, Book, and Maintain Your Car's Best Friend - Cars Workshops App This tagline highlights the key features of your app: helping users discover workshops, book appointments, and ensure their cars are well-maintained. It emphasizes convenience and reliability, which are important factors for users seeking automotive services.",
     category: ["laravel", "html", "css", "Api"],
     imgPath: "./images/7.png",
     Link: "https://carsworkshops.com/",
     github: "",
     ios: "https://apps.apple.com/jo/app/%D9%88%D8%B1%D8%B4-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA/id6480305504",
     android: "https://play.google.com/store/apps/details?id=com.avocadosoftware.carsworkshops&pcampaignid=web_share",
-  },
-  {
+}, {
     keyID: 8,
-    projectTitle: "DigitalAssistech Website",
-    projectDescription:
-      "Digital Assistech is a website that provides a range of services to help businesses grow and succeed. The website offers a variety of services, including web design, digital marketing, and SEO. With a team of experts in the field, Digital Assistech is committed to helping businesses achieve their goals and reach their full potential....",
-    category: ["laravel", "livewire", "react", "Api"],
+    projectTitle: "Al-ustath Educational",
+    projectDescription: "The Al-Ustath application is one of the outstanding interactive applications in the Saudi market, as it allows students from all levels to choose the desired subject and the appropriate teacher to book and request private lessons online at suitable times, in addition to many features that make the experience unique and successful",
+    category: ["laravel", "Api"],
     imgPath: "./images/8.png",
-    Link: "https://digitalassistech.com/",
+    Link: "https://al-ustath.com/",
     github: "",
-    ios: "",
-    android: "",
-  },
-  {
+    ios: "https://apps.apple.com/jo/app/%D8%A7%D9%84%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0/id1625060070",
+    android: "https://play.google.com/store/apps/details?id=com.digisol.teacher.teacher&pli=1",
+}, {
     keyID: 9,
     projectTitle: "avocado-soft",
-    projectDescription:
-      "Avocado Soft is a website that provides a range of services to help businesses grow and succeed. The website offers a variety of services, including web design, digital marketing, and SEO. With a team of experts in the field, Avocado Soft is committed to helping businesses achieve their goals and reach their full potential....",
+    projectDescription: "Avocado Soft is a website that provides a range of services to help businesses grow and succeed. The website offers a variety of services, including web design, digital marketing, and SEO. With a team of experts in the field, Avocado Soft is committed to helping businesses achieve their goals and reach their full potential....",
     category: ["html", "css", "js"],
     imgPath: "./images/9.png",
     Link: "https://avocado-soft.com/",
     github: "",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 10,
     projectTitle: "Mayadin_Alshemal",
-    projectDescription:
-      "Mayadin Alshemal is a website that provides a range of comprehensive military equipment services. Mayadin Alshemal: Your Premier Destination for Military Equipment Services This tagline emphasizes the platform's role as a leading destination for various military equipment services. It conveys professionalism and reliability, qualities that are crucial for users in the defense sector.",
+    projectDescription: "Mayadin Alshemal is a website that provides a range of comprehensive military equipment services. Mayadin Alshemal: Your Premier Destination for Military Equipment Services This tagline emphasizes the platform's role as a leading destination for various military equipment services. It conveys professionalism and reliability, qualities that are crucial for users in the defense sector.",
     category: ["laravel", "html", "css", "js"],
     imgPath: "./images/10.png",
     Link: "https://north.com.sa/",
     github: "",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 11,
     projectTitle: "Ajyal Store Project",
-    projectDescription:
-      "This is Project E-commerce is multiple Stores the buying/selling of goods or services on the Internet",
+    projectDescription: "This is Project E-commerce is multiple Stores the buying/selling of goods or services on the Internet",
     category: ["laravel", "livewire", "js"],
     imgPath: "./images/11.png",
     Link: "",
     github: "https://github.com/Rami-Suwayyed/Ajyal-Store",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 12,
     projectTitle: "News Website Project",
     projectDescription: "This is Project News Website to use node js express",
     category: ["node", "express", "js", "Api"],
-    imgPath: "./images/12.png",
-    // Link: "https://encouraging-jewelry-ant.cyclic.app/",
+    imgPath: "./images/12.png", // Link: "https://encouraging-jewelry-ant.cyclic.app/",
     Link: "https://news-website-6fo0.onrender.com/",
     github: "https://github.com/Rami-Suwayyed/NodeTutorial/tree/News-Website",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 13,
     projectTitle: "task-manager Project",
     projectDescription: "This is Project task-manager to use node js express",
@@ -151,8 +128,7 @@ export const myProjects = [
     github: "https://github.com/Rami-Suwayyed/NodeTutorial/tree/task-manager",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 14,
     projectTitle: "Prayers Timings",
     projectDescription: "This is Project Prayers Timings   website for prayer times in Jordan is incredibly helpful for Muslims in the region. The Prayer Timetable displays the daily prayer times for different cities in Jordan, including Fajr, Dhuhr, Asr, Maghrib, and Isha. You can also include the timing for sunrise and sunset.",
@@ -162,8 +138,7 @@ export const myProjects = [
     github: "https://github.com/Rami-Suwayyed/prayers-timings-react",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 15,
     projectTitle: "x-system",
     projectDescription: "This is Project x-system to use Node js express Ejs Mongodb To help you with storing and organizing the data created and collected by an organization. The data management process aim to make sure the data in corporate systems is accurate, available and accessible.",
@@ -173,8 +148,7 @@ export const myProjects = [
     github: "https://github.com/Rami-Suwayyed/X-system",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 16,
     projectTitle: "RubooAlKhair Website",
     projectDescription: "It is an introductory website for a RubooAlKhair company and its products",
@@ -184,8 +158,7 @@ export const myProjects = [
     github: "https://github.com/Rami-Suwayyed/RUBOOALKHAIR",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 17,
     projectTitle: "E-commerce FleetCart",
     projectDescription: "This is Project E-commerce FleetCart Project",
@@ -195,27 +168,25 @@ export const myProjects = [
     github: "",
     ios: "",
     android: "",
-  },
-  {
+}, {
     keyID: 18,
     projectTitle: "System Dashboard",
     projectDescription: "This is System Dashboard Project to use laravel livewire vue js",
-    category: ["laravel", "livewire" ,'vue'],
+    category: ["laravel", "livewire", 'vue'],
     imgPath: "./images/18.png",
     Link: "",
     github: "https://github.com/Rami-Suwayyed/SystemDashboard",
     ios: "",
     android: "",
-  },
-  // {
-  //   keyID: 19,
-  //   projectTitle: "ChatGpt Ai Project",
-  //   projectDescription: "This is Project ChatGpt Ai Project",
-  //   category: ["react", "Api", "node"],
-  //   imgPath: "./images/19.png",
-  //   Link: "https://aichatgpt-3.netlify.app/",
-  //   github: "https://github.com/Rami-Suwayyed/ChatGPT-React-Node",
-  //   ios: "",
-  //   android: "",
-  // },
+}, // {
+    //   keyID: 19,
+    //   projectTitle: "ChatGpt Ai Project",
+    //   projectDescription: "This is Project ChatGpt Ai Project",
+    //   category: ["react", "Api", "node"],
+    //   imgPath: "./images/19.png",
+    //   Link: "https://aichatgpt-3.netlify.app/",
+    //   github: "https://github.com/Rami-Suwayyed/ChatGPT-React-Node",
+    //   ios: "",
+    //   android: "",
+    // },
 ];
