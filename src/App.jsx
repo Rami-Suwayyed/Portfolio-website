@@ -1,40 +1,30 @@
-import Hero from "./components/2-hero/Hero";
-import Header from "./components/1-header/Header";
-import Main from "./components/3-main/Main";
-import Contact from "./components/4-contact/Contact";
-import Footer from "./components/5-footer/Footer";
-import {useEffect, useState} from "react";
-import Resume from "./components/4-contact/Resume.jsx";
+import { useTheme } from "./hooks/useTheme";
+import Nav from "./components/layout/Nav";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
+import Work from "./components/sections/Work";
+import Contact from "./components/sections/Contact";
+import ScrollTop from "./components/ui/ScrollTop";
 
 function App() {
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                setshowScrollBTN(true);
-            } else {
-                setshowScrollBTN(false);
-            }
-        });
-    }, []);
+  const { theme, toggle } = useTheme();
 
-    const [showScrollBTN, setshowScrollBTN] = useState(false);
-    return (<div id="up" className="container">
-            <Header/>
-            <div id="about"/>
-            <Hero/>
-            <div id="projects" className="divider"/>
-            <Main/>
-            <div id="resume" className="divider"/>
-            <Resume/>
-            <div id="contact" className="divider"/>
-            <Contact/>
-            <div className="divider"/>
-            <Footer/>
-
-            <a style={{opacity: showScrollBTN ? 1 : 0, transition: "1s"}} href="#up">
-                <button className="icon-keyboard_arrow_up scroll2Top"></button>
-            </a>
-        </div>);
+  return (
+    <>
+      <Nav theme={theme} onToggle={toggle} />
+      <main>
+        <Hero />
+        <About />
+        <Work />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollTop />
+    </>
+  );
 }
 
 export default App;

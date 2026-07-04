@@ -1,0 +1,121 @@
+.timeline {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: var(--s-5);
+}
+
+.timeline__rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline__rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+/* trim the connector on the first and last items */
+.timeline__item:first-child .timeline__rail::before {
+  top: 10px;
+}
+.timeline__item:last-child .timeline__rail::before {
+  bottom: calc(100% - 10px);
+}
+
+.timeline__node {
+  position: relative;
+  z-index: 1;
+  margin-top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.timeline__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding-bottom: var(--s-7);
+}
+
+.timeline__item:last-child .timeline__body {
+  padding-bottom: 0;
+}
+
+.timeline__period {
+  font-size: var(--fs-mono);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.timeline__role {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+}
+
+.timeline__org {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.timeline__summary {
+  color: var(--text-dim);
+  max-width: 62ch;
+}
+
+.timeline__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  list-style: none;
+  margin-top: var(--s-1);
+}
+
+/* ---- Education (compact block under the timeline) ---- */
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-top: var(--s-7);
+  padding: var(--s-5);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--r);
+}
+
+.edu__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-2) var(--s-4);
+}
+
+.edu__degree {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+}
+
+.edu__period {
+  font-size: var(--fs-mono);
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.edu__school {
+  color: var(--text-dim);
+}

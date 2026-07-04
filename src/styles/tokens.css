@@ -1,0 +1,124 @@
+/* ============================================================
+   Design tokens — engineered / blueprint system
+   Single source of truth for color, type, space, motion.
+   ============================================================ */
+
+:root {
+  /* ---- Type families ---- */
+  --font-display: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* ---- Fluid type scale ---- */
+  --fs-display: clamp(2.6rem, 1.4rem + 5.2vw, 5rem);
+  --fs-h1: clamp(2rem, 1.3rem + 3vw, 3.2rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 1.8vw, 2.3rem);
+  --fs-h3: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+  --fs-body: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-mono: 0.8125rem;
+  --fs-label: 0.75rem;
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.65;
+  --tracking-label: 0.16em;
+
+  /* ---- Spacing scale (8pt) ---- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+
+  /* ---- Radius (engineered = crisp, small) ---- */
+  --r-sm: 5px;
+  --r: 9px;
+  --r-lg: 14px;
+
+  /* ---- Layout ---- */
+  --container: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --nav-h: 68px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-1: 0.18s;
+  --dur-2: 0.35s;
+  --dur-3: 0.6s;
+
+  /* ---- Z ---- */
+  --z-nav: 100;
+  --z-modal: 200;
+}
+
+/* ============================================================
+   Dark theme (default) — blueprint navy
+   ============================================================ */
+:root,
+.dark {
+  color-scheme: dark;
+
+  --ink: #0b1016;
+  --ink-2: #0f161f;
+  --panel: #131c27;
+  --panel-2: #18232f;
+
+  --line: #22303d;
+  --line-2: #2d3f4f;
+
+  --text: #e9eef3;
+  --text-dim: #9fADbb;
+  --text-mute: #667585;
+
+  --accent: #f5a65b;
+  --accent-2: #ffc487;
+  --accent-ink: #1a1206; /* text on top of accent fills */
+  --accent-soft: rgba(245, 166, 91, 0.12);
+
+  --live: #58c793;
+  --live-soft: rgba(88, 199, 147, 0.14);
+
+  --grid-line: rgba(130, 165, 200, 0.055);
+  --shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 8px 24px -12px rgba(0, 0, 0, 0.55);
+  --ring: rgba(245, 166, 91, 0.55);
+}
+
+/* ============================================================
+   Light theme — blueprint paper
+   ============================================================ */
+.light {
+  color-scheme: light;
+
+  --ink: #eef1f6;
+  --ink-2: #f5f7fa;
+  --panel: #ffffff;
+  --panel-2: #eef2f7;
+
+  --line: #d6dde6;
+  --line-2: #c1cbd7;
+
+  --text: #101b26;
+  --text-dim: #465360;
+  --text-mute: #6d7b89;
+
+  --accent: #c06a1f;
+  --accent-2: #d98529;
+  --accent-ink: #fff6ec;
+  --accent-soft: rgba(192, 106, 31, 0.1);
+
+  --live: #1f9c67;
+  --live-soft: rgba(31, 156, 103, 0.12);
+
+  --grid-line: rgba(40, 74, 110, 0.06);
+  --shadow: 0 24px 60px -24px rgba(30, 50, 75, 0.28);
+  --shadow-sm: 0 10px 26px -16px rgba(30, 50, 75, 0.25);
+  --ring: rgba(192, 106, 31, 0.5);
+}

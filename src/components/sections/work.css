@@ -1,0 +1,51 @@
+.work__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-bottom: var(--s-6);
+}
+
+.work__filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6ch;
+  padding: 0.5rem 0.85rem;
+  font-size: var(--fs-mono);
+  color: var(--text-dim);
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  transition: color var(--dur-1) var(--ease),
+    border-color var(--dur-1) var(--ease), background-color var(--dur-1) var(--ease);
+}
+
+.work__filter:hover {
+  color: var(--text);
+  border-color: var(--line-2);
+}
+
+.work__filter.is-active {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.work__count {
+  font-size: 0.68rem;
+  opacity: 0.7;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, currentColor 16%, transparent);
+}
+
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--s-5);
+}
+
+@media (max-width: 520px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  margin-bottom: var(--s-7);
+  max-width: 62ch;
+}
+
+.section-header__title {
+  font-size: var(--fs-h2);
+}
+
+.section-header__lead {
+  margin-top: var(--s-1);
+}
