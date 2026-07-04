@@ -11,6 +11,9 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
-    "no-unused-vars":  'warn',
+    'no-unused-vars': 'warn',
+    // Plain-JS project (no TypeScript / PropTypes) — components are
+    // typed by their data files instead of runtime prop-types.
+    'react/prop-types': 'off',
   },
 }
