@@ -37,15 +37,3 @@
   border-radius: 999px;
   background: color-mix(in oklab, currentColor 16%, transparent);
 }
-
-.work__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--s-5);
-}
-
-@media (max-width: 520px) {
-  .work__grid {
-    grid-template-columns: 1fr;
-  }
-}

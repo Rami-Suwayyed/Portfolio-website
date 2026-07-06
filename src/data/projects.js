@@ -16,6 +16,7 @@ export const projects = [
     github: "",
     ios: "",
     android: "",
+    featured: true,
   },
   {
     id: 19,
@@ -29,6 +30,7 @@ export const projects = [
     ios: "https://apps.apple.com/om/app/kabseh-%D9%83%D8%A8%D8%B3%D9%87/id6463165637?l=ar",
     android:
       "https://play.google.com/store/apps/details?id=com.metafortech.kabsauser&hl=ar",
+    featured: true,
   },
   {
     id: 1,
@@ -42,6 +44,7 @@ export const projects = [
     ios: "https://apps.apple.com/jo/app/arab-georgia/id6446327662",
     android:
       "https://play.google.com/store/apps/details?id=com.glyphsmarketing.arabgeorgia.app&pcampaignid=web_share",
+    featured: true,
   },
   {
     id: 2,
@@ -55,6 +58,7 @@ export const projects = [
     ios: "https://apps.apple.com/jo/app/arab-usa/id6463208425",
     android:
       "https://play.google.com/store/apps/details?id=com.glyphsmarketing.arabusa&pcampaignid=web_share",
+    featured: true,
   },
   {
     id: 3,
@@ -250,6 +254,45 @@ export const projects = [
     ios: "",
     android: "",
   },
+  {
+    id: 21,
+    title: "Estate by Haven",
+    description:
+      "A real-estate marketplace for finding a place to call home — browse listings to buy or rent, filter by property type and price, save favourites and post a listing. A fast, app-like React front end with search and a clean, image-forward browsing experience.",
+    stack: ["react"],
+    image: "./images/21.png",
+    web: "https://estatebyhaven.netlify.app/",
+    github: "https://github.com/Rami-Suwayyed/haven",
+    ios: "",
+    android: "",
+    featured: false,
+  },
+  {
+    id: 22,
+    title: "Al Diwan Al Yemeni",
+    description:
+      "A bilingual (EN/AR) website for an authentic Yemeni restaurant — menu, story and location wrapped in a warm, culturally grounded design. Built as a snappy React single-page app with full right-to-left support.",
+    stack: ["react"],
+    image: "./images/22.png",
+    web: "https://al-diwan-al-yemeni.netlify.app/",
+    github: "https://github.com/Rami-Suwayyed/aldiwan-website",
+    ios: "",
+    android: "",
+    featured: true,
+  },
+  {
+    id: 23,
+    title: "Victoria Group Jordan",
+    description:
+      "A corporate site for a Jordanian manpower and workforce-solutions firm — presenting recruitment services, the sectors it staffs and the company profile through a clean, professional React front end.",
+    stack: ["react"],
+    image: "./images/23.png",
+    web: "https://victoriagroupjo.netlify.app/",
+    github: "https://github.com/Rami-Suwayyed/VictoriaGroupJO",
+    ios: "",
+    android: "",
+    featured: false,
+  },
 ];
 
 // Human-readable labels for stack codes used across the UI.
@@ -298,6 +341,13 @@ export const matchesFilter = (p, key) => {
   if (key === "mobile") return hasMobile(p);
   return p.stack.includes(key);
 };
+
+// Curated spotlight vs. the rest. Flip `featured` on a project to move it up.
+export const featuredProjects = projects.filter((p) => p.featured);
+export const archiveProjects = projects.filter((p) => !p.featured);
+
+// Display order for the Work carousel: featured builds lead, then the rest.
+export const orderedProjects = [...featuredProjects, ...archiveProjects];
 
 // Live counters used by the hero instrument readout.
 export const stats = {
