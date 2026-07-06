@@ -1,5 +1,4 @@
 import "./project-card.css";
-import { motion } from "framer-motion";
 import { platformsOf, isLive, stackLabels } from "../../data/projects";
 
 const ProjectCard = ({ project }) => {
@@ -8,14 +7,7 @@ const ProjectCard = ({ project }) => {
   const primary = project.web || project.github || project.ios || project.android;
 
   return (
-    <motion.article
-      layout
-      initial={{ opacity: 0, scale: 0.94 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.94 }}
-      transition={{ type: "spring", damping: 22, stiffness: 220 }}
-      className="pcard"
-    >
+    <article className="pcard">
       <a
         className="pcard__media"
         href={primary}
@@ -25,9 +17,15 @@ const ProjectCard = ({ project }) => {
         aria-hidden="true"
       >
         <img src={project.image} alt="" loading="lazy" width="600" height="360" />
+        <span className="pcard__view" aria-hidden="true">
+          <span className="pcard__view-btn">
+            <span className="icon-arrow-right2" />
+          </span>
+        </span>
         <span className={`pcard__badge ${live ? "is-live" : "is-repo"}`}>
           {live ? <span className="status">Live</span> : <span className="mono">Source</span>}
         </span>
+        {project.featured && <span className="pcard__featured mono">Featured</span>}
       </a>
 
       <div className="pcard__body">
@@ -71,7 +69,7 @@ const ProjectCard = ({ project }) => {
           )}
         </div>
       </div>
-    </motion.article>
+    </article>
   );
 };
 

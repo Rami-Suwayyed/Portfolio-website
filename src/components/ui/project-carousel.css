@@ -1,0 +1,134 @@
+/* ============================================================
+   Project carousel — horizontal, snap-scrolling deck
+   ============================================================ */
+
+.work__carousel {
+  position: relative;
+}
+
+.work__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 2px;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge */
+}
+
+.work__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.work__viewport:active {
+  cursor: grabbing;
+}
+
+.work__track {
+  display: flex;
+  gap: var(--s-5);
+  list-style: none;
+  /* breathing room so card hover-lift + shadow aren't clipped */
+  padding-block: var(--s-3);
+  padding-inline: 2px;
+}
+
+.work__slide {
+  flex: 0 0 clamp(272px, 80vw, 344px);
+  display: flex;
+  scroll-snap-align: start;
+}
+
+.work__slide .pcard {
+  width: 100%;
+}
+
+/* ---- Navigation arrows ---- */
+
+.work__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: var(--text);
+  background: color-mix(in oklab, var(--panel) 84%, transparent);
+  border: 1px solid var(--line-2);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-1) var(--ease),
+    border-color var(--dur-1) var(--ease), color var(--dur-1) var(--ease),
+    opacity var(--dur-2) var(--ease);
+}
+
+.work__nav:hover:not(:disabled) {
+  transform: translateY(-50%) scale(1.07);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.work__nav:active:not(:disabled) {
+  transform: translateY(-50%) scale(0.96);
+}
+
+.work__nav:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.work__nav--prev {
+  left: -10px;
+}
+
+.work__nav--next {
+  right: -10px;
+}
+
+.work__nav .icon-arrow-right2 {
+  font-size: 0.9rem;
+}
+
+.work__nav--prev .icon-arrow-right2 {
+  transform: rotate(180deg);
+}
+
+/* ---- Scroll progress indicator ---- */
+
+.work__progress {
+  position: relative;
+  height: 3px;
+  margin-top: var(--s-5);
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.work__progress.is-hidden {
+  visibility: hidden;
+}
+
+.work__progress-thumb {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  min-width: 40px;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: left var(--dur-1) var(--ease), width var(--dur-1) var(--ease);
+}
+
+/* Touch / small screens: native swipe + progress carry the interaction. */
+@media (max-width: 720px) {
+  .work__nav {
+    display: none;
+  }
+
+  .work__slide {
+    flex-basis: clamp(258px, 82vw, 320px);
+  }
+}
